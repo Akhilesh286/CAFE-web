@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flask App</title>
+    <link rel="stylesheet" href="css/styles.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <!-- code below -->
+     <header>
+        <div class="topnav" id="myTopnav">
+            <a style="" href="#home" class="active">Home</a>
+            <a href="#news">News</a>
+            <a href="#contact">Contact</a>
+            <a href="#about">About</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+     </header>
+
+     <section id="hero" style="background-color: #121212;">
+        <div class="hero-container">
+            <!-- The video -->
+            <video autoplay muted loop class="myVideo">
+                <source src="video/bg2.mp4" type="video/mp4">
+            </video>
+
+            <!-- Optional: some overlay text to describe the video -->
+            <div class="content">
+                <div class="hro-txt">
+                    <h1>Brewed for moments that matter.</h1>
+                    <p>Savor every sip with our handcrafted blends, made fresh for you. Start your day the right way at Mocha Moments</p>
+                </div>
+                <div class="hro-btn">
+                    <button>Know More</button>
+                </div>
+            </div>
+        </div>
+     </section>
+     <section id="story">
+        <div class="sty-container">
+            <div class="sty-img" >
+                <img src="images/story.jpg" alt="">
+            </div>
+            <!-- <h1>Story</h1> -->
+            <div class="sty-txt">
+                <h1>OUR STORY</h1>
+                <p>Tucked away beneath a canopy of twinkling lights and the soft hum of midnight tunes, Mocha Moon Café was born from a simple idea — that some of the best conversations happen over coffee when the world slows down. Designed as a cozy night-time escape, this isn’t your usual daytime coffee shop. Here, rich aromas and soft, glowing lights set the stage for couples to connect, laugh, and fall in love one sip at a time. Every corner whispers a story, from handwritten love notes pinned to the wall to candle-lit tables made for long, lingering conversations.
+                    <br><br> 
+At Mocha Moon, the night isn’t about rushing; it’s about savoring — the coffee, the company, and the moment. Our carefully curated menu of handcrafted blends and decadent desserts pairs perfectly with late-night talks and romantic glances. Whether it’s your first date or your hundredth, this little haven offers a timeless backdrop for unforgettable memories under the stars.
+
+</p>
+            </div>
+        </div>
+     </section>
+<!-- 
+     <section class="gallery" style="height: 100vh;">
+        <div class="gal-container">
+            <div class="gal-img">
+                <img src="{{ url_for('static', filename='images/img3.jpg') }}" alt="">
+                <img src="{{ url_for('static', filename='images/img.jpg') }}" alt="">
+                <img src="{{ url_for('static', filename='images/img4.jpg') }}" alt="">
+                <img src="{{ url_for('static', filename='images/img2.jpg') }}" alt="">
+            
+            </div>
+        </div>
+     </section> -->
+
+
+    <section id="menu" style="margin-top: 2rem;margin-bottom: 2rem;">
+        <div class="mnu-title">
+            <h1>MENU</h1>
+        </div>
+        <div class="mnu-container">
+            <div class="mnu-card">
+                <div class="mnu-img">
+                    <img src="images/product2/img.png" alt="">
+                </div>
+                <div class="mnu-txt">
+                    <p>Moonlit Mocha </p>
+                    <p>₹220</p>
+                    <p style="font-size: 1rem;">Rich, chocolatey, smooth, comforting, indulgent.  </p>
+                </div>
+            </div>
+            <div class="mnu-card">
+                <div class="mnu-img">
+                    <img src="images/product2/img2.png" alt="">
+                </div>
+                <div class="mnu-txt">
+                    <p>Vanilla Whisper Latte</p>
+                    <p>₹200</p>
+                    <p style="font-size: 1rem;">Sweet, mellow, creamy, aromatic, soothing.</p>
+                
+                </div>
+            </div>
+            <div class="mnu-card">
+                <div class="mnu-img">
+                    <img src="images/product2/img3.png" alt="">
+                </div>
+                <div class="mnu-txt">
+                    <p>Caramel Twilight Macchiato</p>
+                    <p>₹230</p>
+                    <p style="font-size: 1rem;">Bold, caramel, frothy, layered, decadent.  </p>
+                
+                </div>
+            </div>
+            <div class="mnu-card">
+                <div class="mnu-img">
+                    <img src="images/product2/img4.png" alt="">
+                </div>
+                <div class="mnu-txt">
+                    <p>Classic Midnight Brew </p>
+                    <p>₹180</p>
+                    <p style="font-size: 1rem;">Strong, pure, aromatic, timeless, bold. </p>
+                
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+     <section class="review">
+        <div class="rev-contaner">
+            <div class="rev-card">
+                <div class="rev-star">
+                    <img src="images/star2.svg"  alt="">
+                    <img src="images/star2.svg"  alt="">
+                    <img src="images/star2.svg"  alt="">
+                    <img src="images/star2.svg"  alt="">
+                    <img src="images/star2.svg"  alt="">
+                </div>
+                <div class="rev-content">
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias, eos!</p>
+                </div>
+                <div class="rev-person">
+                    <p>five star</p>
+                    <img src="images/person.svg" width="32px" alt="">
+                </div>
+            </div>
+            <div class="rev-card">
+                <div class="rev-star">
+                    <img src="images/star2.svg"  alt="">
+                    <img src="images/star2.svg"  alt="">
+                    <img src="images/star2.svg"  alt="">
+                    <img src="images/star2.svg"  alt="">
+                    <img src="images/star2.svg"  alt="">
+                </div>
+                <div class="rev-content">
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias, eos!</p>
+                </div>
+                <div class="rev-person">
+                    <p>five star</p>
+                    <img src="images/person.svg" width="32px" alt="">
+                </div>
+            </div>
+            <div class="rev-card">
+                <div class="rev-star">
+                    <img src="images/star2.svg"  alt="">
+                    <img src="images/star2.svg"  alt="">
+                    <img src="images/star2.svg"  alt="">
+                    <img src="images/star2.svg"  alt="">
+                    <img src="images/star2.svg"  alt="">
+                </div>
+                <div class="rev-content">
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias, eos!</p>
+                </div>
+                <div class="rev-person">
+                    <p>five star</p>
+                    <img src="images/person.svg" width="32px" alt="">
+                </div>
+            </div>
+        </div>
+     </section>
+
+     <section class="contact">
+        <div class="con-container">
+            <div class="con-address">
+                <p>201 James St N Hamilton <br> Ontario L8R 2L2 Canada</p>
+                <p style="font-weight: light;color: #292a2b;">coffeeshop@cafe.com</p>
+                <p style="font-weight: light;color: #292a2b;">	(905) 528-5548</p>
+            </div>
+            <div class="con-links">
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">story</a></li>
+                    <li><a href="">menu</a></li>
+                    <li><a href="">review</a></li>
+                    <li><a href="">contact</a></li>
+                </ul>
+            </div>
+            <div class="con-icons">
+                <img src="images/whatsapp.svg" width="32px" alt="">
+                <img src="images/facebook.svg" width="32px" alt="">
+                <img src="images/instagram.svg" width="32px" alt="">
+
+            </div>
+        </div>
+     </section>
+
+     <script>
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        }
+     </script>
+
+
+
+</body>
+</html>
